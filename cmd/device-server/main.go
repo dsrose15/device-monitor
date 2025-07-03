@@ -55,7 +55,7 @@ func initDB() (*pgxpool.Pool, error) {
 	// You can set this via environment variable: DATABASE_URL
 	dbURL := os.Getenv("DATABASE_URL")
 	if dbURL == "" {
-		dbURL = "postgres://username:password@localhost:5432/database_name?sslmode=disable"
+		dbURL = "postgres://postgres:password@localhost:5432/postgres?sslmode=disable"
 	}
 
 	// Configure connection pool

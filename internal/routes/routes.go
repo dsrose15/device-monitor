@@ -35,6 +35,6 @@ func SetupRoutes(router *gin.Engine, db *pgxpool.Pool) {
 	router.Static("/static", "./static")
 
 	// Serve HTML templates (if needed)
-	router.LoadHTMLGlob("templates/*")
-	router.GET("/", h.Index)
+	//router.LoadHTMLGlob("templates/*")
+	//router.GET("/", h.Index)
 }
